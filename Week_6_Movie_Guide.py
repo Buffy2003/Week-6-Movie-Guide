@@ -43,7 +43,7 @@ def delete_movie(movies):
     if index < 1 or index > len(movies):
         print("This is an invalid movie number.\n")
     else:
-        movie = movies.pop(index - 1)  # pop -1 because lists are zero based number 1 is actually position 0
+        movie = movies.pop(index - 1)
         write_movies(movies)
         print(f"{movie} has been deleted.\n")
 
